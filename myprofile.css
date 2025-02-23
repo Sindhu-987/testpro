@@ -1,0 +1,112 @@
+/* General Styles */
+body {
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85) !important;
+    padding: 12px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 15px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+.navbar b {
+    color: rgb(75, 110, 224);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navbar Links */
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: rgb(145, 121, 105) !important;
+    padding: 8px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+/* Logout Button */
+.navbar-nav .text-danger {
+    color: #ff4d4d !important;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav .text-danger:hover {
+    background: rgba(255, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Profile Section */
+.container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+.profile-card {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #222;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+hr {
+    border-top: 2px solid #ddd;
+    width: 100%;
+    margin: 10px auto;
+}

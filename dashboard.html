@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - CBIT ExamPay</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="icon" href="cbitedupay.ico" type="image/x-icon"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body>
+    <nav style="background-color: #EAE2C6;" class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <!-- Logo + College Name -->
+            <a class="navbar-brand d-flex align-items-center" href="https://www.cbit.ac.in/" target="_blank">
+                <img src="cbitlogo.png" alt="CBIT Logo" style="max-height: 50px; border-radius: 50%; ">
+                <b style="padding-left: 20px;">Chaitanya Bharathi Institute of Technology</b>
+            </a>   
+            <!-- Navbar Toggle Button -->
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person"></i> My Profile
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="myprofile.html">Go to My Profile</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-danger" href="index.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <!-- Dashboard Content -->
+    <div class="container mt-4">
+        <h2>Dashboard</h2>
+        <!-- Notifications -->
+        <div class="alert alert-info">
+            <strong>Notifications:</strong>
+            <ul>
+                <li>Upcoming Exam Fee Deadline: <strong>[Date]</strong></li>
+                <li>Overdue Fee for <strong>[Course]</strong> - 
+                    <a href="payment.html" class="btn btn-sm btn-danger">Pay Now</a> (Extra Fee Applicable)
+                </li>
+            </ul>
+        </div>
+        <!-- Transaction History -->
+        <h2>Transaction History</h2>
+        <div class="transaction-history">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Year</th>
+                        <th>Course</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Receipt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023</td>
+                        <td>Major - [Course Name]</td>
+                        <td>Exam Fee</td>
+                        <td>₹[Amount]</td>
+                        <td>[Date]</td>
+                        <td><a href="#">Download</a></td>
+                    </tr>
+                    </tbody>
+            </table>
+        </div>             
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</body>
+</html>
